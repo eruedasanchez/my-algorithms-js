@@ -1,15 +1,14 @@
 /* Algoritmos complementarios. Parte III */
 
-/* Ejercicio 1. El pizarron 
+/* Ejercicio 1. El pizarron */ 
 
 let texto = prompt("Bienvenido. Ingrese un texto por favor");
 let repeticiones = prompt("Ahora, ingrese la cantidad de veces que quiere repetirlo");
 for(let numeroRepeticion = 0; numeroRepeticion < repeticiones; numeroRepeticion++){
     alert(`${texto}. Repeticion numero ${numeroRepeticion + 1}`);
 }
-*/
 
-/* Ejercicio 2. El cuadrado ordinario 
+/* Ejercicio 2. El cuadrado ordinario */ 
 
 const minimo = (a,b) => {
     if(a < b){
@@ -23,9 +22,8 @@ let numero = prompt("Bienvenido. Ingrese un numero por favor");
 for(let lado = 0; lado < minimo(4,numero); lado++){
     alert(`Lado ${lado + 1}`);
 }
-*/
 
-/* Ejercicio 3. Registro de alumnos 
+/* Ejercicio 3. Registro de alumnos */ 
 
 alert(`Bienvenido al registro de alumnos! Presione enter para continuar`);
 let alumnos = "";
@@ -34,9 +32,9 @@ for(let alumno = 0; alumno < 10; alumno++){
     alumnos = alumnos + " " + nombre;
 }
 alert(`Lista de alumnos: ${alumnos}`);
-*/
 
-/* Ejercicio 4. El innombrable 
+
+/* Ejercicio 4. El innombrable */ 
 
 alert(`Bienvenido. Va a ingresar nombres hasta que adivine el nombre del innombrable`);
 let nombre = "";
@@ -49,7 +47,7 @@ do{
         nombres = nombres + " " + nombre;
     }
 } while(nombre != "Voldemort"){}
-*/
+
 
 /* Ejercicio 5. Comprando productos */ 
 
