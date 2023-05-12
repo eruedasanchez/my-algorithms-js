@@ -53,8 +53,8 @@ alert(integrantes);
 /* Ejercicio 5. Descuentos */ 
 
 alert(`Bienvenido a la calculadora de descuentos. Presione enter para continuar.`);
-let valor = prompt("Ingrese el precio del producto que quiere calcularle el descuento");
-let descuento = prompt("Ahora, ingrese el descuento (sin simbolo %) que desea realizarle al producto. Por ejemplo, 20.");
+let valor = parseFloat(prompt("Ingrese el precio del producto que quiere calcularle el descuento"));
+let descuento = parseFloat(prompt("Ahora, ingrese el descuento (sin simbolo %) que desea realizarle al producto. Por ejemplo, 20.")); 
 descuento = (valor * descuento) / 100;
 valor = valor - descuento;
 alert(`Excelente. Usted obtiene ${descuento} pesos de descuento y su producto pasa a tener un valor final de ${valor} pesos. Le aconsejamos realizar la compra!`);
