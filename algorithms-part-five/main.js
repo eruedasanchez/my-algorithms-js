@@ -18,7 +18,6 @@ console.log(primerTienda);
 console.log(segundaTienda);
 console.log(tercerTienda);
 
-
 /* Ejercicio 2. Registro de tiendas */
 
 class Tienda{
@@ -82,7 +81,6 @@ for(let i = 0; i < 3; i++){
     }
 }
 
-
 /* Ejercicio 4. Validar propietario */
 
 class Tienda{
@@ -128,8 +126,7 @@ for(let i = 0; i < 5; i++){
     }
 }
 
-
-/* Ejercicio 5. Validar propietario */
+/* Ejercicio 5. El cliente */
 
 class Cliente{
     constructor(nombre, presupuesto, telefono, tarjDescuento){
@@ -140,10 +137,31 @@ class Cliente{
     }
     transferirDinero(valor){
         if((valor > 0) && (this.presupuesto - valor >= 0)){
-            return this.presupuesto - valor;
+            this.presupuesto = this.presupuesto - valor;
+            return true;
         } else {
             // No se puede transferir
-            alert(`Usted no posee fondos suficientes para realizar la transferencia o ingreso montos negativos`); 
+            return false; 
+        }
+    }
+}
+
+const primerCliente = new Cliente("Enzo Fernandez", 50000 , "1161644212", false);
+const segundoCliente = new Cliente("Julian Alvarez", 100000, "1166419832", false);
+const tercerCliente = new Cliente("Lionel Messi", 2000000, "1141973532", false);
+const clientes = [];
+clientes.push(primerCliente);
+clientes.push(segundoCliente);
+clientes.push(tercerCliente);
+// Chequear si cada cliente puede transferir el monto ingresado
+alert(`Bienvenido. Le vamos a solicitar cinco (5) valores de presupuesto para ver si algun cliente puede transferir el monto solicitado`);
+for(let i = 0; i < 5; i++){
+    let valor = parseInt(prompt('Ingrese el valor numero ' + (i+1) + ' a transferir'));
+    for(let c = 0; c < clientes.length; c++){
+        if(clientes[c].transferirDinero(valor)){
+            alert(`El cliente ${clientes[c].nombre} puede realizar una transferencia de $${valor}.`);
+        } else {
+            alert(`El cliente ${clientes[c].nombre} no tiene fondos suficientes para realizar una transferencia de $${valor}`);
         }
     }
 }
