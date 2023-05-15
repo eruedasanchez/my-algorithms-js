@@ -2,6 +2,7 @@
 
 /* Ejercicio 1. La tienda */
 
+/*
 class Tienda{
     constructor(nombre, direccion, propietario, rubro){
     this.nombre = nombre;
@@ -17,9 +18,11 @@ const tercerTienda = new Tienda("Puppies", "Avenida Rivadavia 5600", "Eukanuba",
 console.log(primerTienda);
 console.log(segundaTienda);
 console.log(tercerTienda);
+*/
 
 /* Ejercicio 2. Registro de tiendas */
 
+/*
 class Tienda{
     constructor(nombre, direccion, propietario, rubro){
     this.nombre = nombre;
@@ -44,10 +47,11 @@ for(let numeroTienda = 0; numeroTienda < 5; numeroTienda++){
     tiendas.push(negocio);
 }
 alert(JSON.stringify(tiendas, null, 6));
-
+*/
 
 /* Ejercicio 3. Abierto y cerrado */
 
+/* 
 class Negocio{
     constructor(nombre, direccion, propietario, rubro){
     this.nombre = nombre;
@@ -80,9 +84,11 @@ for(let i = 0; i < 3; i++){
         alert(`Ops! En ese horario estamos cerrados. Por favor, ingresa otro horario.`);
     }
 }
+*/
 
 /* Ejercicio 4. Validar propietario */
 
+/*
 class Tienda{
     constructor(nombre, direccion, propietario, rubro){
     this.nombre = nombre;
@@ -125,6 +131,7 @@ for(let i = 0; i < 5; i++){
         }
     }
 }
+*/
 
 /* Ejercicio 5. El cliente */
 
